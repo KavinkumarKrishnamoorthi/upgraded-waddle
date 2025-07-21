@@ -4,7 +4,7 @@ from langchain.embeddings import OpenAIEmbeddings
 # -----------------------------
 # Step 1: Load the saved FAISS DB
 # -----------------------------
-embedding_model = OpenAIEmbeddings(openai_api_key="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")
+embedding_model = OpenAIEmbeddings(openai_api_key="")
 vectorstore = FAISS.load_local("faiss_index", embeddings=embedding_model, allow_dangerous_deserialization=True)
 
 # -----------------------------
